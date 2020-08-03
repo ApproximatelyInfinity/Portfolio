@@ -1,0 +1,1037 @@
+@import './src/style/globals.scss';
+@import './src/style/fonts.scss';
+@import './src/style/buttons.scss';
+
+.Mobile {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+
+    .animated-flash {
+        animation-iteration-count: infinite;
+    }
+}
+
+.home-mobile {
+    background-image: url('../assets/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    .home-name {
+        font-size: 44px;
+    }
+
+    .home-title {
+        font-size: 32px;
+    }
+
+    .home-details {
+        font-size: 18px;
+    }
+}
+
+.about-mobile {
+    color: white;
+    text-align: right;
+    background-image: url('../assets/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 22px;
+
+    .profile-text-container {
+        font-size: 16px;
+        //text-align: left;
+
+        .link-text {
+            color: map-get($colors, secondary);
+            font-weight: bold;
+        }
+    }
+
+    .profile-skills-container {
+        font-size: 14px;
+        //text-align: center;
+        //text-align: left;
+        background-color: rgba(0,0,0,0.5);
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .skills-title {
+            font-size: 14px;
+        }
+        .col {
+            width: 50px;
+        }
+    }
+}
+
+.project-mobile {
+    background-image: url('../assets/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    .project-mo {
+        margin-top: 45px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+
+        .project-title {
+            font-size: 22px;
+        }
+        .project-stack {
+            font-size: 16px;
+            font-style: italic;
+        }
+        .btn-work {
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+    }
+
+    .project-cc {
+        border-bottom: 2px solid white;
+
+        .project-title {
+            font-size: 22px;
+        }
+        .project-stack {
+            font-size: 16px;
+            font-style: italic;
+        }
+        .btn-work {
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+    }
+    .project-yp {
+        border-bottom: 2px solid white;
+
+        .project-title {
+            font-size: 22px;
+        }
+        .project-stack {
+            font-size: 16px;
+            font-style: italic;
+        }
+        .btn-work {
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+    }
+}
+
+.resume-mobile {
+    background-image: url('../assets/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.rec-mobile {
+    background-image: url('../assets/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    .pdf-link {
+        color: white;
+    }
+
+    .download-btn {
+        fill: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .bmt-container, .dod-container {
+        background-color: rgba(0,0,0,0.5);
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+}
+
+.contact-mobile {
+    background-image: url('../assets/6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+        .contact-container {
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            padding-bottom: 20px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid black;
+
+            .contact-input {
+                border: 3px solid black;
+            }
+            .contact-message {
+                height: 100px;
+                width: 280px;
+                margin-left: -40px;
+                border: 3px solid black;
+            }
+        }
+}
+
+.swiper-slide {
+    min-height: calc(100vh - 70px);
+}
+
+.arrow-container {
+    background-color: black;
+    height: 70px;
+    position: relative;
+    z-index: 1;
+    .swiper-menu {
+        margin-top: 16px;
+        position: relative;
+        margin-left: 55px;
+        margin-right: 50px;
+
+        .nav-item {
+            height: 25px;
+            width: 25px;
+            margin-right: 8px;
+        }
+    }
+    .swiper-button-prev {
+        margin-top: -40px;
+        color: white;
+    }
+
+    .swiper-button-next {
+        margin-top: -40px;
+        color: white;
+    }
+}
+
+//iPad-------------------------------------------------------
+@media only screen and (max-width: 820px) {
+    .arrow-container {
+        .swiper-menu {
+            text-align: center;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 275px;
+            margin-left: 26px;
+
+            .home-name {
+                font-size: 64px;
+            }
+
+            .home-title {
+                font-size: 42px;
+            }
+
+            .home-details {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 32px;
+        }
+    }
+
+    .resume-mobile {
+        //text-align: center;
+        
+        .resume-title {
+            .title-name {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+            .title-email {
+                margin-bottom: -4px;
+            }
+        }
+
+        .resume-education {
+            display: block;
+            margin-top: 4px;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .education-university {
+                margin-bottom: -4px;
+            }
+
+            .education-degree {
+                margin-bottom: -4px;
+            }
+
+        }
+
+        .resume-projects {
+            display: block;
+            margin-top: 8px;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .project-title {
+                margin-bottom: -4px;
+            }
+
+            .project-role {
+                margin-bottom: 6px;
+            }
+            
+            .project-details {
+                display: block;
+            }
+        }
+
+        .resume-experience {
+            display: block;
+            margin-top: 8px;
+            text-align: right;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .exp-company {
+                margin-bottom: -4px;
+            }
+
+            .exp-title {
+                margin-bottom: -4px;
+            }
+            
+            .exp-date {
+                margin-bottom: -4px;
+            }
+            
+            .exp-details {
+                display: block;
+            }
+        }
+    }
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+    
+//iPhone X-------------------------------------------------------
+@media only screen and (max-width: 375px) {
+    .arrow-container {
+        .swiper-menu {
+            text-align: center;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 250px;
+            margin-left: 0px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 18px;
+            }
+        }
+
+        .about-mobile {
+            .profile-text-container {
+                font-size: 122px;
+            }
+        }
+
+        .resume-mobile {
+            .resume-title {
+                background-color: transparent;
+                .title-name {
+                    font-size: 22px;
+                    margin-bottom: -4px;
+                }
+                .title-email {
+                    margin-bottom: -4px;
+                }
+            }
+    
+            .resume-education {
+                display: block;
+                margin-top: 4px;
+                background-color: transparent;
+                .resume-title {
+                    font-size: 22px;
+                    margin-bottom: -4px;
+                }
+    
+                .education-university {
+                    margin-bottom: -4px;
+                }
+    
+                .education-degree {
+                    margin-bottom: -4px;
+                }
+    
+            }
+    
+            .resume-projects {
+                display: block;
+                margin-top: 8px;
+                background-color: transparent;
+                .resume-title {
+                    font-size: 22px;
+                    margin-bottom: -4px;
+                }
+    
+                .project-title {
+                    margin-bottom: -4px;
+                }
+    
+                .project-role {
+                    margin-bottom: 6px;
+                }
+                
+                .project-details {
+                    display: none;
+                }
+            }
+    
+            .resume-experience {
+                display: block;
+                margin-top: 8px;
+                text-align: right;
+                background-color: transparent;
+                .resume-title {
+                    font-size: 22px;
+                    margin-bottom: -4px;
+                }
+    
+                .exp-company {
+                    margin-bottom: -4px;
+                }
+    
+                .exp-title {
+                    margin-bottom: -4px;
+                }
+                
+                .exp-date {
+                    margin-bottom: -4px;
+                }
+                
+                .exp-details {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+
+//iPhone 8+-------------------------------------------------------
+@media only screen and (max-width: 414px) {
+    .arrow-container {
+        .swiper-menu {
+            text-align: center;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+    .home-mobile {
+        .home-container {
+            margin-top: 225px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 18px;
+        }
+    }
+
+    .resume-mobile {
+        .resume-title {
+            background-color: rgba(0,0,0,0.5);
+            .title-name {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+            .title-email {
+                margin-bottom: -4px;
+            }
+        }
+
+        .resume-education {
+            display: block;
+            margin-top: 4px;
+            background-color: rgba(0,0,0,0.5);
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .education-university {
+                margin-bottom: -4px;
+            }
+
+            .education-degree {
+                margin-bottom: -4px;
+            }
+
+        }
+
+        .resume-projects {
+            display: block;
+            margin-top: 8px;
+            background-color: rgba(0,0,0,0.5);
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .project-title {
+                margin-bottom: -4px;
+            }
+
+            .project-role {
+                margin-bottom: 6px;
+            }
+            
+            .project-details {
+                display: none;
+            }
+        }
+
+        .resume-experience {
+            display: block;
+            margin-top: 8px;
+            text-align: right;
+            background-color: rgba(0,0,0,0.5);
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .exp-company {
+                margin-bottom: -4px;
+            }
+
+            .exp-title {
+                margin-bottom: -4px;
+            }
+            
+            .exp-date {
+                margin-bottom: -4px;
+            }
+            
+            .exp-details {
+                display: none;
+            }
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+
+//Pixel 2-------------------------------------------------------
+@media only screen and (max-width: 411px) {
+    .arrow-container {
+        .swiper-menu {
+            margin-right: 80px;
+            margin-left: 82px;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 200px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 18px;
+        }
+    }
+
+    .resume-mobile {
+        .resume-title {
+            background-color: transparent;
+            .title-name {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+            .title-email {
+                margin-bottom: -4px;
+                background-color: transparent;
+            }
+        }
+
+        .resume-education {
+            display: block;
+            margin-top: 4px;
+            background-color: transparent;
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .education-university {
+                margin-bottom: -4px;
+            }
+
+            .education-degree {
+                margin-bottom: -4px;
+            }
+
+        }
+
+        .resume-projects {
+            display: block;
+            margin-top: 8px;
+            background-color: transparent;
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .project-title {
+                margin-bottom: -4px;
+            }
+
+            .project-role {
+                margin-bottom: 6px;
+            }
+            
+            .project-details {
+                display: none;
+            }
+        }
+
+        .resume-experience {
+            display: block;
+            margin-top: 8px;
+            text-align: right;
+            background-color: transparent;
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .exp-company {
+                margin-bottom: -4px;
+            }
+
+            .exp-title {
+                margin-bottom: -4px;
+            }
+            
+            .exp-date {
+                margin-bottom: -4px;
+            }
+            
+            .exp-details {
+                display: none;
+            }
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+
+//iPhone 6-------------------------------------------------------
+@media only screen and (max-width: 375px) {
+    .arrow-container {
+        .swiper-menu {
+            margin-right: 65px;
+            margin-left: 65px;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 175px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 18px;
+        }
+    }
+
+    .resume-mobile {
+        .resume-title {
+            .title-name {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+            .title-email {
+                margin-bottom: -4px;
+            }
+        }
+
+        .resume-education {
+            display: block;
+            margin-top: 4px;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .education-university {
+                margin-bottom: -4px;
+            }
+
+            .education-degree {
+                margin-bottom: -4px;
+            }
+
+        }
+
+        .resume-projects {
+            display: block;
+            margin-top: 8px;
+            width: 300px;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .project-title {
+                margin-bottom: -4px;
+            }
+
+            .project-role {
+                margin-bottom: 6px;
+            }
+            
+            .project-details {
+                display: none;
+            }
+        }
+
+        .resume-experience {
+            display: none;
+            margin-top: 8px;
+            text-align: right;
+
+            .resume-title {
+                font-size: 22px;
+                margin-bottom: -4px;
+            }
+
+            .exp-company {
+                margin-bottom: -4px;
+            }
+
+            .exp-title {
+                margin-bottom: -4px;
+            }
+            
+            .exp-date {
+                margin-bottom: -4px;
+            }
+            
+            .exp-details {
+                display: none;
+            }
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+
+//Galaxy S5-------------------------------------------------------
+@media only screen and (max-width: 360px) {
+    .arrow-container {
+        .swiper-menu {
+            margin-right: 55px;
+            margin-left: 55px;
+            .nav-item {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 150px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 14px;
+        }
+    }
+
+    .resume-mobile {
+        .resume-title {
+            .title-name {
+                font-size: 22px;
+            }
+        }
+
+        .resume-education {
+            display: none;
+        }
+
+        .resume-projects {
+            display: none;
+        }
+
+        .resume-experience {
+            display: none;
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+}
+
+//iPhone 5-------------------------------------------------------
+@media only screen and (max-width: 320px) {
+    .arrow-container {
+        .swiper-menu {
+            margin-right: 55px;
+            margin-left: 50px;
+            .nav-item {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .home-mobile {
+        .home-container {
+            margin-top: 100px;
+
+            .home-name {
+                font-size: 44px;
+            }
+
+            .home-title {
+                font-size: 32px;
+            }
+
+            .home-details {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about-mobile {
+        .profile-text-container {
+            font-size: 14px;
+        }
+    }
+
+    .resume-mobile {
+        .resume-title {
+            .title-name {
+                font-size: 22px;
+            }
+        }
+
+        .resume-education {
+            display: none;
+        }
+
+        .resume-projects {
+            display: none;
+        }
+
+        .resume-experience {
+            display: none;
+        }
+    }
+
+    .rec-mobile {
+        .title-text {
+
+        }
+        
+        .rec-img-bmt {
+            display: none;
+        }
+
+        .rec-img-dod {
+            display: none;
+        }
+    }
+
+    .contact-mobile {
+        .contact-container {
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            padding-bottom: 20px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid black;
+
+            .contact-input {
+                border: 3px solid black;
+            }
+            .contact-message {
+                height: 100px;
+                width: 280px;
+                margin-left: -40px;
+                border: 3px solid black;
+            }
+        }
+    }
+}
