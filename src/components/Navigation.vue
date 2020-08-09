@@ -8,7 +8,7 @@
                 <ul class="list-unstyled">
                     <!-- Home -->
                     <router-link to="/">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg version="1.1" class="nav-item" fill="white" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <g>
                                     <g>
@@ -28,7 +28,7 @@
                     </router-link>
                     <!-- About -->
                     <router-link to="/about">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 482.9 482.9" style="enable-background:new 0 0 482.9 482.9;" xml:space="preserve" class="nav-item">
                                 <g>
                                     <path d="M239.7,260.2c0.5,0,1,0,1.6,0c0.2,0,0.4,0,0.6,0c0.3,0,0.7,0,1,0c29.3-0.5,53-10.8,70.5-30.5    c38.5-43.4,32.1-117.8,31.4-124.9c-2.5-53.3-27.7-78.8-48.5-90.7C280.8,5.2,262.7,0.4,242.5,0h-0.7c-0.1,0-0.3,0-0.4,0h-0.6    c-11.1,0-32.9,1.8-53.8,13.7c-21,11.9-46.6,37.4-49.1,91.1c-0.7,7.1-7.1,81.5,31.4,124.9C186.7,249.4,210.4,259.7,239.7,260.2z     M164.6,107.3c0-0.3,0.1-0.6,0.1-0.8c3.3-71.7,54.2-79.4,76-79.4h0.4c0.2,0,0.5,0,0.8,0c27,0.6,72.9,11.6,76,79.4    c0,0.3,0,0.6,0.1,0.8c0.1,0.7,7.1,68.7-24.7,104.5c-12.6,14.2-29.4,21.2-51.5,21.4c-0.2,0-0.3,0-0.5,0l0,0c-0.2,0-0.3,0-0.5,0    c-22-0.2-38.9-7.2-51.4-21.4C157.7,176.2,164.5,107.9,164.6,107.3z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
@@ -39,7 +39,7 @@
                     </router-link>
                     <!-- Projects -->
                     <router-link to="/projects">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 522.468 522.469" style="enable-background:new 0 0 522.468 522.469;" xml:space="preserve" class="nav-item">
                                 <g>
                                     <path d="M325.762,70.513l-17.706-4.854c-2.279-0.76-4.524-0.521-6.707,0.715c-2.19,1.237-3.669,3.094-4.429,5.568L190.426,440.53    c-0.76,2.475-0.522,4.809,0.715,6.995c1.237,2.19,3.09,3.665,5.568,4.425l17.701,4.856c2.284,0.766,4.521,0.526,6.71-0.712    c2.19-1.243,3.666-3.094,4.425-5.564L332.042,81.936c0.759-2.474,0.523-4.808-0.716-6.999    C330.088,72.747,328.237,71.272,325.762,70.513z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
@@ -51,7 +51,7 @@
                     </router-link>
                     <!-- Resume -->
                     <router-link to="/resume">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg version="1.1" class="nav-item" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 415 415" style="enable-background:new 0 0 415 415;" xml:space="preserve">
                                 <g>
                                     <path d="M35,0v415h345V0H35z M365,400H50V15h315V400z"  fill="#FFFFFF"/>
@@ -66,39 +66,38 @@
                     </router-link>
                     <!-- Rec -->
                     <router-link to="/rec">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg class="nav-item" fill="white" id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m384.721 0-323.626 323.627-61.095 188.373 188.374-61.094 323.626-323.627zm84.853 127.279-42.427 42.427-84.853-84.853 42.426-42.427zm-388.611 232.331 71.427 71.428-32.036 10.39-49.782-49.782zm14.501-27.925 225.617-225.618 31.82 31.82-225.618 225.617zm53.032 53.032 225.618-225.619 31.82 31.82-225.618 225.619zm-88.313 38.965 28.136 28.136-41.642 13.505z"/></g></svg>
                         </li>
                     </router-link>
                      <!-- Resize -->
                     <div class="resize" v-on:click="openWin()">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg version="1.1" class="nav-item" fill="white" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
-    <g>
-	<g>
-		<path d="M352,0H128c-22.08,0.026-39.974,17.92-40,40v400c0.026,22.08,17.92,39.974,40,40h224c22.08-0.026,39.974-17.92,40-40V40
-			C391.974,17.92,374.08,0.026,352,0z M376,440c0,13.255-10.745,24-24,24H128c-13.255,0-24-10.745-24-24v-40h272V440z M376,384H104
-			V64h272V384z M376,48H104v-8c0-13.255,10.745-24,24-24h224c13.255,0,24,10.745,24,24V48z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M240,408c-13.255,0-24,10.745-24,24s10.745,24,24,24s24-10.745,24-24S253.255,408,240,408z M240,440c-4.418,0-8-3.582-8-8
-			s3.582-8,8-8s8,3.582,8,8S244.418,440,240,440z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M248,24h-16c-4.418,0-8,3.582-8,8s3.582,8,8,8h16c4.418,0,8-3.582,8-8S252.418,24,248,24z"/>
-	</g>
-</g>
-</svg>
-
+                                <g>
+                                    <g>
+                                        <path d="M352,0H128c-22.08,0.026-39.974,17.92-40,40v400c0.026,22.08,17.92,39.974,40,40h224c22.08-0.026,39.974-17.92,40-40V40
+                                            C391.974,17.92,374.08,0.026,352,0z M376,440c0,13.255-10.745,24-24,24H128c-13.255,0-24-10.745-24-24v-40h272V440z M376,384H104
+                                            V64h272V384z M376,48H104v-8c0-13.255,10.745-24,24-24h224c13.255,0,24,10.745,24,24V48z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M240,408c-13.255,0-24,10.745-24,24s10.745,24,24,24s24-10.745,24-24S253.255,408,240,408z M240,440c-4.418,0-8-3.582-8-8
+                                            s3.582-8,8-8s8,3.582,8,8S244.418,440,240,440z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M248,24h-16c-4.418,0-8,3.582-8,8s3.582,8,8,8h16c4.418,0,8-3.582,8-8S252.418,24,248,24z"/>
+                                    </g>
+                                </g>
+                            </svg>
                         </li>
                     </div>
                     <!-- Contact -->
                     <router-link to="/contact">
-                        <li class="list-item">
+                        <li class="list-item" v-on:click="burger()">
                             <svg version="1.1" class="nav-item" id="Capa_1" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
                                 <g>
                                     <g>
@@ -127,7 +126,7 @@ export default {
             document.getElementById("menu").classList.toggle("menu-active");
         },
         openWin() {
-            window.open("https://donbrogdon.com", "", "width=375, height=812");
+            window.open("https://donbrogdon.com/", "", "width=375, height=812");
         }
     }
 }

@@ -44,7 +44,7 @@
                         </div>
                         <div class="col">
                             <div class="project-btn-container">
-                                <a href="https://www.yuppypuppyok.com"><button class="btn btn-mo">View</button></a>
+                                <a href="https://www.yuppypuppyok.com/"><button class="btn btn-mo">View</button></a>
                             </div>
                         </div>
                     </div>

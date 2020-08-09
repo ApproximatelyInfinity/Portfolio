@@ -27,7 +27,8 @@ export default {
         width: 0, 
       },
       location: 'Norman, OK',
-      phone: '(580) 786-8297',
+      //phone: '(580) 786-8297',
+      phone: '(405) 623-9089',
       email: 'dbrogdon91@gmail.com',
       languages: ['C/C++', 'JS', 'PHP', 'MySQL', 'HTML/CSS'],
       technologies: ['SASS', 'Bootstrap', 'VueJS', 'ReactJS', 'NodeJS', 'jQuery'],
@@ -71,7 +72,7 @@ export default {
         {
           title: "Yuppy Puppy - Grooming Spa",
           website: "https://www.yuppypuppyok.com",
-          stack: "VueJS, Twilio API, Mapbox API",
+          stack: "VueJS, NodeJS, Twilio API, Mapbox API",
           role: "Developer",
           details: "Website for a local business. Utilizes the Twilio API to make appoitnments via text message.",
         },

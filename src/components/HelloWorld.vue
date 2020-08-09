@@ -377,8 +377,8 @@ export default {
     methods: {
 
     },
-    created() {
-      
+    mounted() {
+      //document.getElementsByClassName("st0").style.visibility = "hidden";
 
   },
 }
